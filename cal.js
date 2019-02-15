@@ -1,3 +1,4 @@
+/**Print stuff on the screen**/
 function screenValue(value){
   var check = $("#screen").val();
   var decCheck=0;
@@ -5,7 +6,6 @@ function screenValue(value){
   /*Check if there are two or more decimal*/
   for(var i = check.length-1; i > 0; i-- ){
     if(check[i] == "." && value == "." || (check.length ==1 && value == "." && check[i] == ".")){
-      console.log("checked");
       decCheck = 1;
     } else if(operatorChecker(check[i])){
       break;
