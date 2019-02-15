@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>A Calculator application, similar to Google's</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="cal.js"></script>
+  <link rel="stylesheet" type="text/css" href="A2style.css">
+  <body>
+    <form name="cal" class="calculator">
+    <table class="border">
+      <tr>
+        <td>
+          <input class="result button" type="text" name="result" class="result" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="screen" type="text" name="screen" id="screen" value="0" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" name="(" value="(" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input type="button" name=")" value=")" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" class="clear" name="c" value="c" onclick="screenValue(value);">
+        </td>
+
+      </tr>
+
+
+      <tr>
+        <td>
+          <input class="button" type="button" name="7" value="7" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="8" value="8" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="9" value="9" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="division" value="/" onclick="screenValue(value);">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <input class="button" type="button" name="4" value="4" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="5" value="5" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="6" value="6" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="times" value="*" onclick="screenValue(value);">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <input class="button" type="button" name="1" value="1" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="2" value="2" onclick="screenValue(value);">
+        </td>
+
+        <td
+        ><input class="button" type="button" name="3" value="3" onclick="screenValue(value);">
+      </td>
+
+        <td>
+          <input class="button" type="button" name="sub" value="-" onclick="screenValue(value);">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input class="button" type="button" name="0" value="0" onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="decimal" value="." onclick="screenValue(value);">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="equals" value="=" onclick="ans();">
+        </td>
+
+        <td>
+          <input class="button" type="button" name="add" value="+" onclick="screenValue(value);">
+        </td>
+      </tr>
+    </table>
+
+    <div >
+      <input type="hidden" class = "sneaky">
+    </div>
+  </body>
+</html>
